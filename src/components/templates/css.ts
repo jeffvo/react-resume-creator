@@ -1,4 +1,4 @@
-export const cssTemplate = `header {
+export const cssTemplate: string = `header {
   text-align: center;
 }
 

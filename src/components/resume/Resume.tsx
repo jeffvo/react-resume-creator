@@ -1,5 +1,5 @@
-import he from "he";
-import "./Resume.css";
+import he from 'he';
+import './Resume.css';
 
 interface ResumeProps {
   html: string;

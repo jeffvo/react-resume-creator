@@ -1,0 +1,33 @@
+{
+  "extends": ["airbnb", "airbnb/hooks", "airbnb-typescript"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": "off",
+    "object-curly-newline": [
+      "error",
+      { "multiline": true, "minProperties": 5 }
+    ],
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/consistent-type-definitions": "error",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
