@@ -35,12 +35,18 @@ export default function Editor({ setHtml, html, css, setCss }: Props) {
       {value === 0 && (
         <CodeMirror
           value={html}
+          theme="dark"
           extensions={[htmlLanguage]}
           onChange={setHtml}
         />
       )}
       {value === 1 && (
-        <CodeMirror value={css} extensions={[cssLanguage]} onChange={setCss} />
+        <CodeMirror
+          theme="dark"
+          value={css}
+          extensions={[cssLanguage]}
+          onChange={setCss}
+        />
       )}
     </>
   );

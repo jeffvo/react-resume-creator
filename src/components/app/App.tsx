@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Editor from '../editor/Editor';
-import PdfGenerator from '../pdfGenerator/PdfGenerator';
 import Resume from '../resume/Resume';
 import './App.css';
+import Header from './Header';
 
 export default function App() {
   const [html, setHtml] = useState('');
@@ -10,9 +10,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <div className="header">
-        <PdfGenerator />
-      </div>
+      <Header />
       <div className="content">
         <div className="myEditor">
           <Editor setHtml={setHtml} html={html} css={css} setCss={setCss} />

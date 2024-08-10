@@ -4,19 +4,15 @@
   box-sizing: border-box;
 }
 
-.header {
-  height: 36px;
-}
-
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .myEditor {
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 4px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
   line-height: 1.5;
   overflow: auto;
@@ -43,7 +39,7 @@ body {
 }
 
 #resume {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   background-color: #f5f5f5;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
