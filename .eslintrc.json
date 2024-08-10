@@ -3,6 +3,8 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
     "object-curly-newline": [
       "error",
       { "multiline": true, "minProperties": 5 }
