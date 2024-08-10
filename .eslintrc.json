@@ -11,12 +11,6 @@
     ],
     "import/prefer-default-export": "off",
     "@typescript-eslint/consistent-type-definitions": "error",
-    "@typescript-eslint/typedef": [
-      "warn",
-      {
-        "variableDeclaration": true
-      }
-    ],
     "import/extensions": [
       "error",
       "ignorePackages",
