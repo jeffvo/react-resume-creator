@@ -15,14 +15,17 @@ export default function Header() {
 }
 
 const HeaderStyled = styled.div`
-  background-color: #000000;
-  border-bottom: 1px solid #ffffff;
+  background-color: #292c34;
+  border-bottom: 1px solid #0f0f0f;
   height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   display: flex;
 `;
 
 const StyledButton = styled.button`
-  background-color: #000000;
+  background-color: #292c34;
   color: #808080;
   border: none;
   cursor: pointer;

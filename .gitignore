@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /.vscode
+node_modules/.cache/.eslintcache
+node_modules/.cache/tsconfig.tsbuildinfo
