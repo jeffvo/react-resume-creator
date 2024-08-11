@@ -5,9 +5,15 @@ export default function Header() {
   return (
     <HeaderStyled>
       <StyledButtonGroup>
-        <StyledButton type="button">Home</StyledButton>
-        <StyledButton type="button">Resume</StyledButton>
-        <StyledButton type="button">Source Code</StyledButton>
+        <StyledLink href="#Home">Home</StyledLink>
+        <StyledLink href="#Content">Resume</StyledLink>
+        <StyledLink
+          href="https://github.com/jeffvo/react-resume-creator"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source Code
+        </StyledLink>
       </StyledButtonGroup>
       <PdfGenerator />
     </HeaderStyled>
@@ -24,15 +30,16 @@ const HeaderStyled = styled.div`
   display: flex;
 `;
 
-const StyledButton = styled.button`
+const StyledLink = styled.a`
   background-color: #292c34;
-  color: #808080;
+  color: #abb2bf;
   border: none;
   cursor: pointer;
   font-size: 16px;
-  padding: 10px 20px;
+  padding: 20px;
   text-transform: uppercase;
-  transition: background-color 0.3s;
+  text-decoration: none;
+  transition: color 0.3s;
   &:hover {
     color: #ffffff;
   }

@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export default function HomePage() {
   return (
-    <StyledDiv>
+    <StyledDiv id="Home">
       <h1>Home Page</h1>
       <StyledP>
         {`Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -22,9 +22,10 @@ export default function HomePage() {
 const StyledDiv = styled.div`
   text-align: center;
   background-color: #292c34;
-  color: #808080;
+  color: #abb2bf;
   height: 800px;
   padding-top: 60px;
+  border-bottom: 1px solid #0f0f0f;
 `;
 
 const StyledP = styled.p`

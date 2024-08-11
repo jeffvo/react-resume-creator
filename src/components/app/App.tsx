@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import { useState } from 'react';
 import Editor from '../editor/Editor';
 import Resume from '../resume/Resume';
@@ -13,12 +14,15 @@ export default function App() {
     <div className="app">
       <Header />
       <HomePage />
-      <div className="content">
-        <div className="myEditor">
-          <Editor setHtml={setHtml} html={html} css={css} setCss={setCss} />
-        </div>
+      <StyledContent id="Content">
+        <Editor setHtml={setHtml} html={html} css={css} setCss={setCss} />
         <Resume html={html} css={css} />
-      </div>
+      </StyledContent>
     </div>
   );
 }
+
+const StyledContent = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
