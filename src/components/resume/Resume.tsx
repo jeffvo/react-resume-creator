@@ -8,6 +8,19 @@ interface ResumeProps {
 
 export default function Resume({ html, css }: ResumeProps) {
   const decodedHtml = he.decode(html);
+
+  const hasJavaScript =
+    /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>|on\w+="[^"]*"|on\w+='[^']*'/i;
+
+  if (hasJavaScript.test(decodedHtml)) {
+    return (
+      <StyledResumeWindow className="resumeWindow">
+        <style>{css}</style>
+        <StyledResume id="resume" />
+      </StyledResumeWindow>
+    );
+  }
+
   return (
     <StyledResumeWindow className="resumeWindow">
       <style>{css}</style>
