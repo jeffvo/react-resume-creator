@@ -13,8 +13,6 @@ to me through the github repository.
 The resume is limited to A4 size. If your resume is larger than A4, it
 will be cut off.
 
-Thank you for using the HTML & CSS Resume creator!
-
 ### `npm start`
 
 Runs the app in the development mode.\
