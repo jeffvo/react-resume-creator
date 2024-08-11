@@ -1,6 +1,6 @@
 {
   "homepage": "http://jeffvo.github.io/react-resume-creator",
-  "name": "resume-generator",
+  "name": "react-resume-creator",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -21,12 +21,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "transform": {
