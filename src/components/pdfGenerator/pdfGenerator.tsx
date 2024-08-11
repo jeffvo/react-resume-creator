@@ -31,6 +31,7 @@ export default function PdfGenerator() {
     printWindow.document.close();
     printWindow.print();
   };
+
   return (
     <StyledDiv>
       <StyledButton type="button" onClick={printResume}>

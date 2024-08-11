@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import PdfGenerator from '../pdfGenerator/PdfGenerator';
+import PdfGenerator from '../pdfGenerator/pdfGenerator';
 
 export default function Header() {
   return (
