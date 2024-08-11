@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import he from 'he';
-import './Resume.css';
 
 interface ResumeProps {
   html: string;

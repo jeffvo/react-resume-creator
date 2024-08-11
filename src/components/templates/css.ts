@@ -2,6 +2,21 @@ export const cssTemplate: string = `header {
   text-align: center;
 }
 
+#resume {
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resumeEditor {
+  margin: 17px;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 #contactInformation {
   margin: 12px;
 }
