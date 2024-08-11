@@ -5,10 +5,6 @@
     "react/jsx-filename-extension": "off",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": "off",
-    "object-curly-newline": [
-      "error",
-      { "multiline": true, "minProperties": 5 }
-    ],
     "import/prefer-default-export": "off",
     "@typescript-eslint/consistent-type-definitions": "error",
     "operator-linebreak": [
@@ -16,6 +12,7 @@
       "after",
       { "overrides": { "?": "before", ":": "before" } }
     ],
+    "object-curly-newline": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -25,7 +22,8 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "@typescript-eslint/comma-dangle": "off"
   },
   "parserOptions": {
     "project": ["./tsconfig.json"]

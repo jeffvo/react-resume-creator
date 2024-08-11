@@ -15,8 +15,7 @@ export default function Resume({ html, css }: ResumeProps) {
   if (hasJavaScript.test(decodedHtml)) {
     return (
       <StyledResumeWindow className="resumeWindow">
-        <style>{css}</style>
-        <StyledResume id="resume" />
+        <h1 style={{ textAlign: 'center' }}>JavaScript is not supported</h1>
       </StyledResumeWindow>
     );
   }

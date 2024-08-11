@@ -12,9 +12,9 @@ export default function HomePage() {
           update in real-time as you type. When you are done, you can download
           the resume through the button in the header.
           <br />
-          I have written some examples in the window and included some styling.
-          If you would like to start from scratch, you can remove all the input
-          in the editor.
+          I have written an example in the window and included some styling. If
+          you would like to start from scratch, you can remove all the input in
+          the editor.
           <br />
           If you would like to save your own template, you can copy the HTML and
           CSS from the editor and save it in a text file. Or you could fork the

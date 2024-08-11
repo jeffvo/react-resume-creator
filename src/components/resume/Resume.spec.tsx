@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import Resume from './Resume';
 
-describe('Resume Component', () => {
+describe('Resume', () => {
   const css = `
     body {
       font-family: Arial, sans-serif;

@@ -2,6 +2,13 @@ import styled from '@emotion/styled';
 
 export default function PdfGenerator() {
   const printResume: () => void = () => {
+    const hasJavaScript =
+      /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>|on\w+="[^"]*"|on\w+='[^']*'/i;
+
+    const elementToPrint: HTMLElement = document.getElementById('resume')!;
+
+    if (!elementToPrint || hasJavaScript.test(elementToPrint.outerHTML)) return;
+
     const printWindow = window.open('', '_blank');
     if (!printWindow) return;
 
@@ -18,9 +25,7 @@ export default function PdfGenerator() {
       .join('\n');
 
     printWindow.document.write(`<html><style>${styleSheets}</style><body>`);
-    const elementToPrint: HTMLElement = document.getElementById('resume')!;
 
-    if (!elementToPrint) return;
     printWindow.document.write(elementToPrint.outerHTML);
     printWindow.document.write('</body></html>');
     printWindow.document.close();
