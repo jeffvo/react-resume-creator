@@ -65,5 +65,4 @@ const StyledDiv = styled.div`
   overflow: auto;
   flex-grow: 1;
   max-height: 297mm;
-  min-width: 50%;
 `;
